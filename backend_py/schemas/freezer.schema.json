@@ -1,0 +1,152 @@
+{
+  "$id": "btc:freezer",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "allOf": [
+    {
+      "$ref": "_base.schema.json"
+    }
+  ],
+  "properties": {
+    "category": {
+      "const": "freezer"
+    },
+    "spec": {
+      "properties": {
+        "cao": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chat_lieu_dong_co": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chat_lieu_mat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chat_lieu_ruot": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "cong_nghe": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "dien_nang_tieu_thu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dung_tich_ngan_dong_mem": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dung_tich_tong": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "energy_saving_technology": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "features": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "gas_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "khoi_luong_may": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "loai_san_pham": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ngang": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "nhiet_do_ngan_dong_do_c": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "noise": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "san_xuat_tai": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sau": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "so_cua": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "so_ngan": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thoi_gian_ra_mat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thuong_hieu_cua": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "type": "object"
+    }
+  },
+  "title": "BTC canonical product - freezer"
+}

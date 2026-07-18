@@ -1,0 +1,13 @@
+.env
+backend_py/.env
+backend_py/data/products_detail.json
+backend_py/data/Spec_cate_gia.xlsx
+backend_py/tests/
+docs/
+scripts/
+*.db
+sessions/
+venv/
+.venv/
+__pycache__/
+.pytest_cache/

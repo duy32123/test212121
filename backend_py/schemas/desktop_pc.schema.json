@@ -1,0 +1,422 @@
+{
+  "$id": "btc:desktop_pc",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "allOf": [
+    {
+      "$ref": "_base.schema.json"
+    }
+  ],
+  "properties": {
+    "category": {
+      "const": "desktop_pc"
+    },
+    "spec": {
+      "properties": {
+        "bo_nguon_de_xuat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "bo_nho": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "bo_nho_dem": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "bus_bo_nho": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "card_do_hoa_onboard": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chat_lieu_than_vo": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chip_do_hoa_gpu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chipset": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chuan_giao_tiep": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chuan_ket_noi_o_cung": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cong_giao_tiep": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "cong_i_o_mat_sau": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "cong_ket_noi": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "cong_nghe_am_thanh": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "cong_nghe_cpu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cong_xuat_hinh_anh": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dai": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "day": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "den_led": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "do_phan_giai": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "form_factor": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "he_dieu_hanh": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ho_tro_khe_cam_ssd_m_2_hdd": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ho_tro_mainboard": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ho_tro_o_cung_toi_da": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ho_tro_oc": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ho_tro_ram_toi_da": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ho_tro_ram_toi_da_mainboard": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ket_noi_internet": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "khe_cam_mo_rong": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "khoi_luong_may": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "kich_thuoc_man_hinh": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "loai_case": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "loai_cpu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "loai_ram": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "loai_ram_mainboard": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "man_hinh_cam_ung": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "man_hinh_hien_thi": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "model_gpu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "model_mainboard": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "nguon_dien": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "o_cung": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "o_dia_quang": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "phu_kien_di_kem": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "ram": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rong": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "so_khe_cam_mo_rong": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "so_khe_ram": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "so_khe_ram_mainboard": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "so_luong_quat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "so_nhan": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "socket": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "socket_mainboard": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tan_nhiet_cpu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tan_nhiet_nuoc": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tan_nhiet_ram": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "the_nho": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thiet_ke_card": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thoi_gian_ra_mat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tinh_nang_khac": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "toc_do_bus_ram_mainboard": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "toc_do_cpu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "toc_do_rpm": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "toc_do_toi_da": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "webcam": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "wifi": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "yeu_cau_cap_nguon_truc_tiep": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "type": "object"
+    }
+  },
+  "title": "BTC canonical product - desktop_pc"
+}

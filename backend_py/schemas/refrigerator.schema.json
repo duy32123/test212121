@@ -1,0 +1,164 @@
+{
+  "$id": "btc:refrigerator",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "allOf": [
+    {
+      "$ref": "_base.schema.json"
+    }
+  ],
+  "properties": {
+    "category": {
+      "const": "refrigerator"
+    },
+    "spec": {
+      "properties": {
+        "cao": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chat_lieu_dong_co": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chat_lieu_khay_ngan_lanh": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chat_lieu_than_vo": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "che_do_tu_dong": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "cong_nghe_bao_quan_thuc_pham": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "cooling_technology": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "dien_nang_tieu_thu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dung_tich_ngan_chuyen_doi": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dung_tich_ngan_da": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dung_tich_ngan_lanh": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dung_tich_su_dung": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dung_tich_tong": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "energy_saving_technology": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "features": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "khoi_luong_may": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "kieu_dang": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "lay_nuoc_ngoai": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ngang": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "san_xuat_tai": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sau": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "so_cua": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "so_nguoi_su_dung": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thoi_gian_ra_mat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "type": "object"
+    }
+  },
+  "title": "BTC canonical product - refrigerator"
+}

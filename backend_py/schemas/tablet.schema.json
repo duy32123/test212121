@@ -1,0 +1,248 @@
+{
+  "$id": "btc:tablet",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "allOf": [
+    {
+      "$ref": "_base.schema.json"
+    }
+  ],
+  "properties": {
+    "category": {
+      "const": "tablet"
+    },
+    "spec": {
+      "properties": {
+        "air_filter_features": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "bluetooth": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chat_lieu_than_vo": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chip_do_hoa_gpu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chip_xu_ly_cpu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cong_nghe_pin": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cong_sac": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cong_tai_nghe_headphone": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dai": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "day": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "do_phan_giai": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dung_luong_kha_dung": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dung_luong_luu_tru": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dung_luong_pin": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ghi_am": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "gps": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "he_dieu_hanh": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ho_tro_sac_toi_da": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ket_noi": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "khoi_luong_may": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "kich_thuoc_man_hinh": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "loai_pin": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "man_hinh_hien_thi": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "mang_di_dong": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ngang": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "phu_kien_di_kem": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "quay_phim": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "radio": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ram": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sim": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "the_nho": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thoi_gian_ra_mat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thuc_hien_cuoc_goi": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tinh_nang_camera_sau": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "tinh_nang_camera_truoc": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "tinh_nang_dac_biet": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "toc_do_cpu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "wifi": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "type": "object"
+    }
+  },
+  "title": "BTC canonical product - tablet"
+}

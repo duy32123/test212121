@@ -1,0 +1,278 @@
+{
+  "$id": "btc:air_conditioner",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "allOf": [
+    {
+      "$ref": "_base.schema.json"
+    }
+  ],
+  "properties": {
+    "category": {
+      "const": "air_conditioner"
+    },
+    "spec": {
+      "properties": {
+        "air_filter_features": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "area_max_m2": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "area_min_m2": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "cao_lap_dat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cao_phu_kien_chinh": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cao_phu_kien_chinh_2": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cao_phu_kien_phu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chat_lieu_dan_tan_nhiet": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "compressor_warranty": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cooling_capacity_btu": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "cooling_technology": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "cspf": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "dai_ong_dong": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dai_phu_kien_chinh": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dai_phu_kien_chinh_2": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dai_phu_kien_phu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "do_day_phu_kien_chinh": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "do_day_phu_kien_chinh_2": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "do_day_phu_kien_phu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dong_dien_hoat_dong": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dong_dien_vao": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "energy_label": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "energy_saving_technology": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "energy_stars": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "features": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "gas_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "indoor_noise_max_db": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "indoor_noise_min_db": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "inverter": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "inverter_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "khoi_luong_may": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "khoi_luong_phu_kien_chinh": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "khoi_luong_phu_kien_phu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "kich_thuoc_ong_dong": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "machine_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "noise": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "outdoor_noise_db": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "output_capacity": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "product_year": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "san_xuat_tai": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "usage_area": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "warranty": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "wind_modes": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "type": "object"
+    }
+  },
+  "title": "BTC canonical product - air_conditioner"
+}

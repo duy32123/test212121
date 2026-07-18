@@ -1,0 +1,194 @@
+{
+  "$id": "btc:water_heater",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "allOf": [
+    {
+      "$ref": "_base.schema.json"
+    }
+  ],
+  "properties": {
+    "category": {
+      "const": "water_heater"
+    },
+    "spec": {
+      "properties": {
+        "ap_luc_nuoc_hoat_dong": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "bom_tro_luc": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cao": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chat_lieu_gia_do_voi_sen": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chat_lieu_khung_vien": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chat_lieu_ruot": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "chat_lieu_than_vo": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chat_lieu_voi_sen": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dai": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dai_ong": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "day": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dung_luong_dung_tich": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "features": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "khoi_luong_may": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "loai_tam_thu_nhiet": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "lop_cach_nhiet": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "machine_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "nhiet_do_lam_nong_toi_da": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "output_capacity": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "product_year": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rong": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "san_xuat_tai": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "so_luong": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thoi_gian_giu_nhiet": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thoi_gian_su_dung": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thuong_hieu_cua": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tinh_nang_an_toan": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "tuy_chinh_nhiet_do": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "voi_sen": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "type": "object"
+    }
+  },
+  "title": "BTC canonical product - water_heater"
+}

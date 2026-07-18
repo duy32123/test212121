@@ -1,0 +1,158 @@
+{
+  "$id": "btc:monitor",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "allOf": [
+    {
+      "$ref": "_base.schema.json"
+    }
+  ],
+  "properties": {
+    "category": {
+      "const": "monitor"
+    },
+    "spec": {
+      "properties": {
+        "cao": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cao_khong_chan": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "day": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dien_nang_tieu_thu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "do_day_khong_chan": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "do_phan_giai": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "do_phu_mau": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "do_sang": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "do_tuong_phan_tinh": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "features": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "ket_noi": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "khoi_luong_may": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "kich_thuoc_man_hinh": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "loa": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "loai_man_hinh": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "man_hinh_cam_ung": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "man_hinh_hien_thi": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ngang": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ngang_module_phu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "so_luong": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tam_nen": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thoi_gian_dap_ung": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "vesa": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "type": "object"
+    }
+  },
+  "title": "BTC canonical product - monitor"
+}

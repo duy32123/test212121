@@ -1,0 +1,17 @@
+venv/
+__pycache__/
+*.pyc
+.env
+backend_py/.env
+.pytest_cache/
+*.egg-info/
+.DS_Store
+*.db
+sessions/
+backend_py/sessions.db
+backend_py/data/products_detail.json
+node_modules/
+.vercel/
+
+.vercel
+.env*

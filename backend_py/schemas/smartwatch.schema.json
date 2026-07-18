@@ -1,0 +1,260 @@
+{
+  "$id": "btc:smartwatch",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "allOf": [
+    {
+      "$ref": "_base.schema.json"
+    }
+  ],
+  "properties": {
+    "category": {
+      "const": "smartwatch"
+    },
+    "spec": {
+      "properties": {
+        "air_filter_features": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "bo_nho": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cam_bien": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "chat_lieu_day": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chat_lieu_khung_vien": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chat_lieu_mat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chip_xu_ly_cpu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chu_vi_co_tay": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cong_sac": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dai": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "day": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dinh_vi": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "do_phan_giai": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "do_phan_giai_camera_truoc": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "do_rong_day": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dung_luong_pin": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "duong_kinh": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "features": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "he_dieu_hanh": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "hien_thi_thong_bao": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "ket_noi": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "khoi_luong_may": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "kich_thuoc_man_hinh": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "kich_thuoc_mat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "man_hinh_hien_thi": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "mon_the_thao": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "ngang": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ngon_ngu": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "san_xuat_tai": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sim": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thay_the": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "theo_doi_suc_khoe": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "thiet_ke": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thoi_gian_ra_mat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thoi_gian_sac": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thoi_gian_su_dung": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thuc_hien_cuoc_goi": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tien_ich_khac": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "tuong_thich": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "ung_dung": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "type": "object"
+    }
+  },
+  "title": "BTC canonical product - smartwatch"
+}

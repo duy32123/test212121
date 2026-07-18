@@ -1,0 +1,182 @@
+{
+  "$id": "btc:printer",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "allOf": [
+    {
+      "$ref": "_base.schema.json"
+    }
+  ],
+  "properties": {
+    "category": {
+      "const": "printer"
+    },
+    "spec": {
+      "properties": {
+        "bo_nho": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cao": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chat_luong_in_do_net": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cong_ket_noi": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "cong_nghe": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "cong_suat_theo_nghiep_vu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cpu_tuong_thich": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dai": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ket_noi": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "khay_chua_giay_da_in": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "khay_nap_giay": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "kho_giay": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "khoi_luong_may": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "kich_thuoc_phu_kien": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "loai_giay_in": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "loai_giay_in_2_mat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "loai_muc_in": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "loai_san_pham": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "man_hinh_hien_thi": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "output_capacity": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "phu_kien_di_kem": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "rong": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "san_xuat_tai": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thoi_gian_chu_ky": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thoi_gian_ra_mat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "toc_do_in": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tuong_thich": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "type": "object"
+    }
+  },
+  "title": "BTC canonical product - printer"
+}

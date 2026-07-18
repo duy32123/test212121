@@ -1,0 +1,56 @@
+{
+  "$id": "btc:karaoke_mic",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "allOf": [
+    {
+      "$ref": "_base.schema.json"
+    }
+  ],
+  "properties": {
+    "category": {
+      "const": "karaoke_mic"
+    },
+    "spec": {
+      "properties": {
+        "bang_tan": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "do_meo_tieng": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "loai_san_pham": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "nam_san_xuat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "san_xuat_tai": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tan_so_hoat_dong": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "type": "object"
+    }
+  },
+  "title": "BTC canonical product - karaoke_mic"
+}

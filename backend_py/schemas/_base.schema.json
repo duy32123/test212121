@@ -1,0 +1,154 @@
+{
+  "$id": "btc:_base",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "brand": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "brand_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "category": {
+      "enum": [
+        "air_conditioner",
+        "desktop_pc",
+        "dishwasher",
+        "dryer",
+        "freezer",
+        "karaoke_mic",
+        "monitor",
+        "phone_mic",
+        "printer",
+        "refrigerator",
+        "smartwatch",
+        "tablet",
+        "washing_machine",
+        "water_heater"
+      ],
+      "type": "string"
+    },
+    "category_code": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "data_quality": {
+      "properties": {
+        "eligible_for_demo": {
+          "type": "boolean"
+        },
+        "missing_fields": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "warnings": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "eligible_for_demo",
+        "missing_fields",
+        "warnings"
+      ],
+      "type": "object"
+    },
+    "effective_price": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "model_code": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "original_price": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "product_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "product_web_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "promotion_price": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "promotions": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "raw": {
+      "type": "object"
+    },
+    "source": {
+      "properties": {
+        "sheet": {
+          "type": "string"
+        },
+        "sku": {
+          "type": "string"
+        },
+        "source_row": {
+          "type": "integer"
+        },
+        "type": {
+          "const": "btc_excel"
+        }
+      },
+      "required": [
+        "type",
+        "sheet",
+        "source_row",
+        "sku"
+      ],
+      "type": "object"
+    },
+    "spec": {
+      "type": "object"
+    },
+    "stock_by_location": {
+      "type": "object"
+    },
+    "stock_status": {
+      "enum": [
+        "unknown"
+      ],
+      "type": "string"
+    }
+  },
+  "required": [
+    "product_id",
+    "category",
+    "source",
+    "data_quality"
+  ],
+  "title": "BTC canonical product (base)",
+  "type": "object"
+}

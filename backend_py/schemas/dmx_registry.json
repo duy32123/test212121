@@ -1,0 +1,167 @@
+{
+  "_note": "DMX real-data registry (products_detail.json). Top-level fields are shared across all 119 categories; spec maps are per-category, grounded in actual field coverage from products_detail.json. Parsers reused from app/catalog/dmx_registry.py. No product data here — config only.",
+  "source": "data/products_detail.json (gitignored, NDA)",
+  "version": "2.0.0",
+  "top_level_mapping": {
+    "product_id": "product_id",
+    "tên sản phẩm": "name",
+    "brand": "brand",
+    "url_image": "image",
+    "url": "url",
+    "màu sắc": "color",
+    "chính sách bảo hành": "warranty",
+    "promotion": "promotion",
+    "Phụ kiện đi kèm": "accessories",
+    "rating_vote": {"key": "rating", "parser": "parse_rating"},
+    "quantity_sold": {"key": "quantity_sold", "parser": "parse_quantity_sold"},
+    "Giá gốc": {"key": "original_price", "parser": "price_to_int"},
+    "Giá khuyến mãi": {"key": "promotion_price", "parser": "price_to_int"},
+    "category_name": "category",
+    "onlineSaleOnly": "online_sale_only"
+  },
+  "effective_price": "promotion_price if > 0 else original_price",
+  "stock_status": "unknown (DMX data has no stock — never invented)",
+  "categories": {
+    "Máy lạnh": {
+      "slug": "air_conditioner",
+      "spec_map": {
+        "Phạm vi làm lạnh hiệu quả": {"keys": ["area_min_m2", "area_max_m2"], "parser": "parse_area"},
+        "Độ ồn trung bình (được đo trong phòng thí nghiệm)": {"keys": ["indoor_noise_min_db", "indoor_noise_max_db", "outdoor_noise_db"], "parser": "parse_noise"},
+        "Công suất làm lạnh": {"keys": ["cooling_capacity_btu"], "parser": "parse_btu"},
+        "Inverter": {"keys": ["inverter"], "parser": "parse_inverter"},
+        "Dòng sản phẩm": {"keys": ["product_year"], "parser": "parse_year"},
+        "Loại Gas": {"keys": ["gas"], "parser": "clean_str"},
+        "Tiêu thụ điện": {"keys": ["power_kwh"], "parser": "parse_kwh"},
+        "Công nghệ tiết kiệm điện": {"keys": ["energy_tech"], "parser": "clean_str"},
+        "Loại máy": {"keys": ["machine_type"], "parser": "clean_str"}
+      },
+      "eligible_for_demo": "has effective_price AND parsed area",
+      "note": "Coverage 97–100% for all mapped fields. No CSPF/energy_stars in DMX (unlike Excel). Energy signal = power_kwh (lower better)."
+    },
+    "Tủ lạnh": {
+      "slug": "tu_lanh",
+      "spec_map": {
+        "Dung tích sử dụng": {"keys": ["capacity_liters"], "parser": "parse_capacity_liters"},
+        "Dung tích tổng": {"keys": ["total_capacity_liters"], "parser": "parse_capacity_liters"},
+        "Công nghệ làm lạnh": {"keys": ["cooling_tech"], "parser": "clean_str"},
+        "Công nghệ tiết kiệm điện": {"keys": ["energy_tech"], "parser": "clean_str"},
+        "Công suất tiêu thụ công bố theo TCVN": {"keys": ["power_kwh_per_day"], "parser": "parse_kwh"}
+      },
+      "eligible_for_demo": "has effective_price AND capacity_liters",
+      "note": "Dung tích sử dụng: 100% coverage. Dung tích tổng: 87%. Công nghệ làm lạnh: 99%."
+    },
+    "Máy giặt": {
+      "slug": "may_giat",
+      "spec_map": {
+        "Khối lượng giặt": {"keys": ["wash_capacity_kg"], "parser": "parse_capacity_kg"},
+        "Số người sử dụng": {"keys": ["household_size_text"], "parser": "clean_str"},
+        "Tốc độ quay vắt tối đa": {"keys": ["spin_speed_rpm"], "parser": "parse_number_from_spec"},
+        "Hiệu suất sử dụng điện": {"keys": ["energy_rating"], "parser": "clean_str"}
+      },
+      "eligible_for_demo": "has effective_price AND wash_capacity_kg",
+      "note": "Khối lượng giặt: 98% coverage. Số người: 98%. Spin speed: 98%."
+    },
+    "Máy sấy quần áo": {
+      "slug": "may_say_quan_ao",
+      "spec_map": {
+        "Khối lượng sấy": {"keys": ["dry_capacity_kg"], "parser": "parse_capacity_kg"},
+        "Số người sử dụng": {"keys": ["household_size_text"], "parser": "clean_str"},
+        "Công suất tiêu thụ": {"keys": ["power_watt"], "parser": "parse_number_from_spec"},
+        "Nhiệt độ sấy tối đa": {"keys": ["max_temp_c"], "parser": "parse_number_from_spec"}
+      },
+      "eligible_for_demo": "has effective_price AND dry_capacity_kg",
+      "note": "All fields: 100% coverage. Loại máy: heat pump vs condenser vs exhaust."
+    },
+    "Máy rửa chén": {
+      "slug": "may_rua_chen",
+      "spec_map": {
+        "Số chén bát rửa được": {"keys": ["capacity_sets"], "parser": "parse_number_from_spec"},
+        "Độ ồn": {"keys": ["noise_db_text"], "parser": "clean_str"},
+        "Tiêu thụ nước": {"keys": ["water_consumption_l"], "parser": "parse_number_from_spec"},
+        "Công suất": {"keys": ["power_watt"], "parser": "parse_number_from_spec"}
+      },
+      "eligible_for_demo": "has effective_price AND capacity_sets",
+      "note": "All fields: 100% coverage. Noise typically given as single value e.g. '49 dB'."
+    },
+    "Tủ đông, tủ mát": {
+      "slug": "tu_dong_tu_mat",
+      "spec_map": {
+        "Dung tích sử dụng": {"keys": ["capacity_liters"], "parser": "parse_capacity_liters"},
+        "Dung tích tổng": {"keys": ["total_capacity_liters"], "parser": "parse_capacity_liters"},
+        "Loại tủ": {"keys": ["chest_type"], "parser": "clean_str"},
+        "Độ ồn": {"keys": ["noise_db_text"], "parser": "clean_str"},
+        "Điện năng tiêu thụ": {"keys": ["power_kwh_per_day"], "parser": "parse_kwh"}
+      },
+      "eligible_for_demo": "has effective_price AND capacity_liters",
+      "note": "All fields 97–100% coverage. Loại tủ distinguishes 'tủ đông' from 'tủ mát'."
+    },
+    "Máy nước nóng": {
+      "slug": "may_nuoc_nong",
+      "spec_map": {
+        "Dung tích bình chứa": {"keys": ["tank_liters"], "parser": "parse_capacity_liters"},
+        "Công suất làm nóng": {"keys": ["heating_power_w"], "parser": "parse_number_from_spec"},
+        "Loại máy": {"keys": ["heater_type"], "parser": "clean_str"},
+        "Bơm trợ lực": {"keys": ["has_pump"], "parser": "parse_bool_from_spec"}
+      },
+      "eligible_for_demo": "has effective_price AND tank_liters",
+      "note": "Dung tích: 100% coverage. Công suất: 95%. Bơm trợ lực: 96%."
+    },
+    "Micro": {
+      "slug": "micro",
+      "spec_map": {
+        "Loại micro": {"keys": ["mic_type"], "parser": "clean_str"},
+        "Jack cắm": {"keys": ["connector_type"], "parser": "clean_str"},
+        "Hướng thu âm": {"keys": ["polar_pattern"], "parser": "clean_str"},
+        "Thời lượng pin": {"keys": ["battery_life_text"], "parser": "clean_str"}
+      },
+      "eligible_for_demo": "has effective_price",
+      "note": "Loại micro: 89% coverage (karaoke wireless vs phone condenser). Jack cắm: 83%. Includes Micro karaoke + Micro thu âm điện thoại (both map to 'Micro' in DMX). Hướng thu âm: 61%. Thời lượng pin: 42%."
+    },
+    "Đồng hồ thông minh": {
+      "slug": "dong_ho_thong_minh",
+      "spec_map": {
+        "Thời gian sử dụng pin": {"keys": ["battery_life_text"], "parser": "clean_str"},
+        "Dung lượng pin": {"keys": ["battery_mah_text"], "parser": "clean_str"},
+        "Chống nước / Kháng nước": {"keys": ["water_resistance"], "parser": "clean_str"},
+        "Kích thước màn hình": {"keys": ["screen_size_text"], "parser": "clean_str"},
+        "Hệ điều hành": {"keys": ["os"], "parser": "clean_str"}
+      },
+      "eligible_for_demo": "has effective_price",
+      "note": "All fields: 99% coverage. Battery life is text (e.g. '7 ngày'). Water resistance: 99%."
+    },
+    "Máy tính bảng": {
+      "slug": "may_tinh_bang",
+      "spec_map": {
+        "RAM": {"keys": ["ram_text"], "parser": "clean_str"},
+        "Dung lượng lưu trữ": {"keys": ["storage_text"], "parser": "clean_str"},
+        "Dung lượng pin": {"keys": ["battery_mah_text"], "parser": "clean_str"},
+        "Màn hình rộng": {"keys": ["screen_inch_text"], "parser": "clean_str"},
+        "Hệ điều hành": {"keys": ["os"], "parser": "clean_str"}
+      },
+      "eligible_for_demo": "has effective_price",
+      "note": "All fields: 100% coverage. RAM/storage given as text (e.g. '8 GB', '256 GB')."
+    },
+    "Pc, máy in": {
+      "slug": "pc_may_in",
+      "spec_map": {
+        "Kích thước màn hình": {"keys": ["screen_size_text"], "parser": "clean_str"},
+        "Tấm nền": {"keys": ["panel_type"], "parser": "clean_str"},
+        "Tần số quét": {"keys": ["refresh_rate_text"], "parser": "clean_str"},
+        "Loại màn hình": {"keys": ["monitor_type"], "parser": "clean_str"},
+        "Công nghệ CPU": {"keys": ["cpu_tech"], "parser": "clean_str"},
+        "RAM": {"keys": ["ram_text"], "parser": "clean_str"},
+        "Ổ cứng": {"keys": ["storage_text"], "parser": "clean_str"},
+        "Tốc độ in": {"keys": ["print_speed_text"], "parser": "clean_str"},
+        "Chức năng": {"keys": ["printer_function"], "parser": "clean_str"}
+      },
+      "sub_type_detection": {
+        "monitor": "has spec key 'Tấm nền' OR ('Tần số quét' AND 'Kích thước màn hình')",
+        "desktop": "has spec key 'Công nghệ CPU' OR 'RAM' with 'Ổ cứng'",
+        "printer": "has spec key 'Tốc độ in' OR product name contains 'máy in'",
+        "ink_accessory": "product name contains 'mực in' OR 'hộp mực'"
+      },
+      "eligible_for_demo": "has effective_price AND (panel_type OR cpu_tech OR print_speed_text)",
+      "note": "DMX merges Máy tính để bàn + Màn hình + Máy in into single 'Pc, máy in' category (229 products: ~104 monitors, ~49 printers, ~16 desktops, ~31 ink accessories, ~27 other). Sub-type filtering applied in retrieve_for_state via use_case slot."
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "$id": "btc:dishwasher",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "allOf": [
+    {
+      "$ref": "_base.schema.json"
+    }
+  ],
+  "properties": {
+    "category": {
+      "const": "dishwasher"
+    },
+    "spec": {
+      "properties": {
+        "bang_dieu_khien": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cao": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chat_lieu_cua": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chat_lieu_than_vo": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chuong_trinh": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "cong_nghe": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "cong_nghe_say": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "dai_ong_cap_nuoc": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dai_ong_xa_nuoc": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "features": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "khay_chen": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "khoi_luong_may": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "loai_san_pham": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ngang": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "noise": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "output_capacity": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "product_year": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "san_xuat_tai": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sau": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "so_luong": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tieu_thu_nuoc": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "type": "object"
+    }
+  },
+  "title": "BTC canonical product - dishwasher"
+}

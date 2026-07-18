@@ -1,0 +1,2351 @@
+{
+  "base_schema": "_base.schema.json",
+  "sheets": {
+    "Micro karaoke": {
+      "category": "karaoke_mic",
+      "deep_fields": [],
+      "deep_parse": false,
+      "drop_columns": [],
+      "list_columns": [
+        "Băng tần"
+      ],
+      "mappings": [
+        {
+          "key": "san_xuat_tai",
+          "source_column": "Sản xuất tại",
+          "type": "string"
+        },
+        {
+          "key": "loai_san_pham",
+          "source_column": "Loại sản phẩm",
+          "type": "string"
+        },
+        {
+          "key": "tan_so_hoat_dong",
+          "source_column": "Tần số hoạt động",
+          "type": "string"
+        },
+        {
+          "key": "bang_tan",
+          "source_column": "Băng tần",
+          "type": "list"
+        },
+        {
+          "key": "do_meo_tieng",
+          "source_column": "Độ méo tiếng",
+          "type": "string"
+        },
+        {
+          "key": "nam_san_xuat",
+          "source_column": "Năm sản xuất",
+          "type": "string"
+        }
+      ],
+      "schema": "karaoke_mic.schema.json"
+    },
+    "Micro thu âm điện thoại": {
+      "category": "phone_mic",
+      "deep_fields": [],
+      "deep_parse": false,
+      "drop_columns": [],
+      "list_columns": [
+        "Băng tần",
+        "Kết nối",
+        "Phụ kiện đi kèm",
+        "Tính năng cơ bản",
+        "Tương thích"
+      ],
+      "mappings": [
+        {
+          "key": "tinh_nang_co_ban",
+          "source_column": "Tính năng cơ bản",
+          "type": "list"
+        },
+        {
+          "key": "loai_pin_bo_phat",
+          "source_column": "Loại pin bộ phát",
+          "type": "string"
+        },
+        {
+          "key": "nhiet_do_hoat_dong_bo_phat",
+          "source_column": "Nhiệt độ hoạt động bộ phát",
+          "type": "string"
+        },
+        {
+          "key": "thoi_gian_hoat_dong_bo_thu",
+          "source_column": "Thời gian hoạt động bộ thu",
+          "type": "string"
+        },
+        {
+          "key": "dung_luong_pin_hop_sac",
+          "source_column": "Dung lượng pin hộp sạc",
+          "type": "string"
+        },
+        {
+          "key": "sac_day_bo_thu",
+          "source_column": "Sạc đầy bộ thu",
+          "type": "string"
+        },
+        {
+          "key": "chu_ky_sac",
+          "source_column": "Chu kỳ sạc",
+          "type": "string"
+        },
+        {
+          "key": "khoang_cach_truyen",
+          "source_column": "Khoảng cách truyền",
+          "type": "string"
+        },
+        {
+          "key": "phu_kien_di_kem",
+          "source_column": "Phụ kiện đi kèm",
+          "type": "list"
+        },
+        {
+          "key": "bang_tan",
+          "source_column": "Băng tần",
+          "type": "list"
+        },
+        {
+          "key": "nam_san_xuat",
+          "source_column": "Năm sản xuất",
+          "type": "string"
+        },
+        {
+          "key": "cong_sac",
+          "source_column": "Cổng sạc",
+          "type": "string"
+        },
+        {
+          "key": "cong_tai_nghe_headphone",
+          "source_column": "Cổng tai nghe, headphone",
+          "type": "string"
+        },
+        {
+          "key": "ket_noi",
+          "source_column": "Kết nối",
+          "type": "list"
+        },
+        {
+          "key": "loai_san_pham",
+          "source_column": "Loại sản phẩm",
+          "type": "string"
+        },
+        {
+          "key": "san_xuat_tai",
+          "source_column": "Sản xuất tại",
+          "type": "string"
+        },
+        {
+          "key": "tuong_thich",
+          "source_column": "Tương thích",
+          "type": "list"
+        },
+        {
+          "key": "thoi_gian_su_dung",
+          "source_column": "Thời gian sử dụng",
+          "type": "string"
+        },
+        {
+          "key": "thuong_hieu_cua",
+          "source_column": "Thương hiệu của",
+          "type": "string"
+        },
+        {
+          "key": "khoi_luong_may",
+          "source_column": "Khối lượng máy",
+          "type": "string"
+        },
+        {
+          "key": "loai_pin_hop_sac",
+          "source_column": "Loại pin hộp sạc",
+          "type": "string"
+        },
+        {
+          "key": "dung_luong_pin_bo_phat",
+          "source_column": "Dung lượng pin bộ phát",
+          "type": "string"
+        },
+        {
+          "key": "thoi_gian_hoat_dong_bo_phat",
+          "source_column": "Thời gian hoạt động bộ phát",
+          "type": "string"
+        },
+        {
+          "key": "thoi_gian_sac_bo_phat",
+          "source_column": "Thời gian sạc bộ phát",
+          "type": "string"
+        },
+        {
+          "key": "tan_so_hoat_dong",
+          "source_column": "Tần số hoạt động",
+          "type": "string"
+        },
+        {
+          "key": "loai_pin_bo_thu",
+          "source_column": "Loại pin bộ thu",
+          "type": "string"
+        },
+        {
+          "key": "dung_luong_pin_bo_thu",
+          "source_column": "Dung lượng pin bộ thu",
+          "type": "string"
+        },
+        {
+          "key": "thoi_gian_sac_bo_thu",
+          "source_column": "Thời gian sạc bộ thu",
+          "type": "string"
+        },
+        {
+          "key": "cong_suat_truyen_phat",
+          "source_column": "Công suất truyền / phát",
+          "type": "string"
+        },
+        {
+          "key": "nhiet_do_hoat_dong_bo_thu",
+          "source_column": "Nhiệt độ hoạt động bộ thu",
+          "type": "string"
+        },
+        {
+          "key": "huong_thu_am",
+          "source_column": "Hướng thu âm",
+          "type": "string"
+        },
+        {
+          "key": "ap_suat_am_thanh_spl",
+          "source_column": "Áp suất âm thanh (SPL)",
+          "type": "string"
+        },
+        {
+          "key": "kich_thuoc",
+          "source_column": "Kích thước",
+          "type": "string"
+        },
+        {
+          "key": "sac_day_bo_phat",
+          "source_column": "Sạc đầy bộ phát",
+          "type": "string"
+        },
+        {
+          "key": "phien_ban",
+          "source_column": "Phiên bản",
+          "type": "string"
+        }
+      ],
+      "schema": "phone_mic.schema.json"
+    },
+    "Màn hình máy tính": {
+      "category": "monitor",
+      "deep_fields": [],
+      "deep_parse": false,
+      "drop_columns": [],
+      "list_columns": [
+        "Kết nối",
+        "Tiện ích"
+      ],
+      "mappings": [
+        {
+          "key": "features",
+          "source_column": "Tiện ích",
+          "type": "list"
+        },
+        {
+          "key": "man_hinh_hien_thi",
+          "source_column": "Màn hình hiển thị",
+          "type": "string"
+        },
+        {
+          "key": "kich_thuoc_man_hinh",
+          "source_column": "Kích thước màn hình",
+          "type": "string"
+        },
+        {
+          "key": "do_phan_giai",
+          "source_column": "Độ phân giải",
+          "type": "string"
+        },
+        {
+          "key": "ngang",
+          "source_column": "Ngang",
+          "type": "string"
+        },
+        {
+          "key": "day",
+          "source_column": "Dày",
+          "type": "string"
+        },
+        {
+          "key": "khoi_luong_may",
+          "source_column": "Khối lượng máy",
+          "type": "string"
+        },
+        {
+          "key": "ket_noi",
+          "source_column": "Kết nối",
+          "type": "list"
+        },
+        {
+          "key": "man_hinh_cam_ung",
+          "source_column": "Màn hình cảm ứng",
+          "type": "string"
+        },
+        {
+          "key": "tam_nen",
+          "source_column": "Tấm nền",
+          "type": "string"
+        },
+        {
+          "key": "thoi_gian_dap_ung",
+          "source_column": "Thời gian đáp ứng",
+          "type": "string"
+        },
+        {
+          "key": "do_phu_mau",
+          "source_column": "Độ phủ màu",
+          "type": "string"
+        },
+        {
+          "key": "so_luong",
+          "source_column": "Số lượng",
+          "type": "string"
+        },
+        {
+          "key": "do_sang",
+          "source_column": "Độ sáng",
+          "type": "string"
+        },
+        {
+          "key": "do_tuong_phan_tinh",
+          "source_column": "Độ tương phản tĩnh",
+          "type": "string"
+        },
+        {
+          "key": "loa",
+          "source_column": "Loa",
+          "type": "string"
+        },
+        {
+          "key": "vesa",
+          "source_column": "Vesa",
+          "type": "string"
+        },
+        {
+          "key": "dien_nang_tieu_thu",
+          "source_column": "Điện năng tiêu thụ",
+          "type": "string"
+        },
+        {
+          "key": "cao",
+          "source_column": "Cao",
+          "type": "string"
+        },
+        {
+          "key": "ngang_module_phu",
+          "source_column": "Ngang module phụ",
+          "type": "string"
+        },
+        {
+          "key": "cao_khong_chan",
+          "source_column": "Cao không chân",
+          "type": "string"
+        },
+        {
+          "key": "do_day_khong_chan",
+          "source_column": "Độ dày không chân",
+          "type": "string"
+        },
+        {
+          "key": "loai_man_hinh",
+          "source_column": "Loại màn hình",
+          "type": "string"
+        }
+      ],
+      "schema": "monitor.schema.json"
+    },
+    "Máy giặt": {
+      "category": "washing_machine",
+      "deep_fields": [],
+      "deep_parse": false,
+      "drop_columns": [],
+      "list_columns": [
+        "Chương trình",
+        "Chất liệu ruột",
+        "Công nghệ",
+        "Công nghệ sấy",
+        "Tiện ích"
+      ],
+      "mappings": [
+        {
+          "key": "san_xuat_tai",
+          "source_column": "Sản xuất tại",
+          "type": "string"
+        },
+        {
+          "key": "thoi_gian_ra_mat",
+          "source_column": "Thời gian ra mắt",
+          "type": "string"
+        },
+        {
+          "key": "dien_nang_tieu_thu",
+          "source_column": "Điện năng tiêu thụ",
+          "type": "string"
+        },
+        {
+          "key": "chat_lieu_than_vo",
+          "source_column": "Chất liệu thân vỏ",
+          "type": "string"
+        },
+        {
+          "key": "so_nguoi_su_dung",
+          "source_column": "Số người sử dụng",
+          "type": "string"
+        },
+        {
+          "key": "features",
+          "source_column": "Tiện ích",
+          "type": "list"
+        },
+        {
+          "key": "cao",
+          "source_column": "Cao",
+          "type": "string"
+        },
+        {
+          "key": "ngang",
+          "source_column": "Ngang",
+          "type": "string"
+        },
+        {
+          "key": "sau",
+          "source_column": "Sâu",
+          "type": "string"
+        },
+        {
+          "key": "khoi_luong_may",
+          "source_column": "Khối lượng máy",
+          "type": "string"
+        },
+        {
+          "key": "so_luong",
+          "source_column": "Số lượng",
+          "type": "string"
+        },
+        {
+          "key": "inverter_type",
+          "source_column": "Loại Inverter",
+          "type": "string"
+        },
+        {
+          "key": "compressor_warranty",
+          "source_column": "Bảo hành động cơ",
+          "type": "string"
+        },
+        {
+          "key": "loai_san_pham",
+          "source_column": "Loại sản phẩm",
+          "type": "string"
+        },
+        {
+          "key": "bang_dieu_khien",
+          "source_column": "Bảng điều khiển",
+          "type": "string"
+        },
+        {
+          "key": "chat_lieu_mat",
+          "source_column": "Chất liệu mặt",
+          "type": "string"
+        },
+        {
+          "key": "long_giat",
+          "source_column": "Lồng giặt",
+          "type": "string"
+        },
+        {
+          "key": "khoi_luong_tai_chinh",
+          "source_column": "Khối lượng tải chính",
+          "type": "string"
+        },
+        {
+          "key": "cong_nghe",
+          "source_column": "Công nghệ",
+          "type": "list"
+        },
+        {
+          "key": "chat_lieu_ruot",
+          "source_column": "Chất liệu ruột",
+          "type": "list"
+        },
+        {
+          "key": "toc_do_quay_vat_toi_da",
+          "source_column": "Tốc độ quay vắt tối đa",
+          "type": "string"
+        },
+        {
+          "key": "dong_co",
+          "source_column": "Động cơ",
+          "type": "string"
+        },
+        {
+          "key": "cong_nghe_say",
+          "source_column": "Công nghệ sấy",
+          "type": "list"
+        },
+        {
+          "key": "chuong_trinh",
+          "source_column": "Chương trình",
+          "type": "list"
+        },
+        {
+          "key": "dai_ong_cap_nuoc",
+          "source_column": "Dài ống cấp nước",
+          "type": "string"
+        },
+        {
+          "key": "dai_ong_xa_nuoc",
+          "source_column": "Dài ống xả nước",
+          "type": "string"
+        }
+      ],
+      "schema": "washing_machine.schema.json"
+    },
+    "Máy in": {
+      "category": "printer",
+      "deep_fields": [],
+      "deep_parse": false,
+      "drop_columns": [],
+      "list_columns": [
+        "Công nghệ",
+        "Cổng kết nối",
+        "Kết nối",
+        "Phụ kiện đi kèm",
+        "Tương thích"
+      ],
+      "mappings": [
+        {
+          "key": "san_xuat_tai",
+          "source_column": "Sản xuất tại",
+          "type": "string"
+        },
+        {
+          "key": "thoi_gian_ra_mat",
+          "source_column": "Thời gian ra mắt",
+          "type": "string"
+        },
+        {
+          "key": "man_hinh_hien_thi",
+          "source_column": "Màn hình hiển thị",
+          "type": "string"
+        },
+        {
+          "key": "dai",
+          "source_column": "Dài",
+          "type": "string"
+        },
+        {
+          "key": "khoi_luong_may",
+          "source_column": "Khối lượng máy",
+          "type": "string"
+        },
+        {
+          "key": "bo_nho",
+          "source_column": "Bộ nhớ",
+          "type": "string"
+        },
+        {
+          "key": "tuong_thich",
+          "source_column": "Tương thích",
+          "type": "list"
+        },
+        {
+          "key": "ket_noi",
+          "source_column": "Kết nối",
+          "type": "list"
+        },
+        {
+          "key": "phu_kien_di_kem",
+          "source_column": "Phụ kiện đi kèm",
+          "type": "list"
+        },
+        {
+          "key": "cong_ket_noi",
+          "source_column": "Cổng kết nối",
+          "type": "list"
+        },
+        {
+          "key": "rong",
+          "source_column": "Rộng",
+          "type": "string"
+        },
+        {
+          "key": "cao",
+          "source_column": "Cao",
+          "type": "string"
+        },
+        {
+          "key": "chat_luong_in_do_net",
+          "source_column": "Chất lượng in (độ nét)",
+          "type": "string"
+        },
+        {
+          "key": "thoi_gian_chu_ky",
+          "source_column": "Thời gian chu kỳ",
+          "type": "string"
+        },
+        {
+          "key": "toc_do_in",
+          "source_column": "Tốc độ in",
+          "type": "string"
+        },
+        {
+          "key": "cong_suat_theo_nghiep_vu",
+          "source_column": "Công suất theo nghiệp vụ",
+          "type": "string"
+        },
+        {
+          "key": "loai_muc_in",
+          "source_column": "Loại mực in",
+          "type": "string"
+        },
+        {
+          "key": "cong_nghe",
+          "source_column": "Công nghệ",
+          "type": "list"
+        },
+        {
+          "key": "kich_thuoc_phu_kien",
+          "source_column": "Kích thước phụ kiện",
+          "type": "string"
+        },
+        {
+          "key": "loai_giay_in",
+          "source_column": "Loại giấy in",
+          "type": "string"
+        },
+        {
+          "key": "khay_chua_giay_da_in",
+          "source_column": "Khay chứa giấy đã in",
+          "type": "string"
+        },
+        {
+          "key": "khay_nap_giay",
+          "source_column": "Khay nạp giấy",
+          "type": "string"
+        },
+        {
+          "key": "kho_giay",
+          "source_column": "Khổ giấy",
+          "type": "string"
+        },
+        {
+          "key": "cpu_tuong_thich",
+          "source_column": "CPU tương thích",
+          "type": "string"
+        },
+        {
+          "key": "output_capacity",
+          "source_column": "Công suất đầu ra",
+          "type": "string"
+        },
+        {
+          "key": "loai_san_pham",
+          "source_column": "Loại sản phẩm",
+          "type": "string"
+        },
+        {
+          "key": "loai_giay_in_2_mat",
+          "source_column": "Loại giấy in 2 mặt",
+          "type": "string"
+        }
+      ],
+      "schema": "printer.schema.json"
+    },
+    "Máy lạnh": {
+      "category": "air_conditioner",
+      "deep_fields": [
+        {
+          "key": "product_year",
+          "source_column": "Dòng sản phẩm",
+          "type": "integer"
+        },
+        {
+          "key": "area_min_m2",
+          "source_column": "Phạm vi sử dụng",
+          "type": "number"
+        },
+        {
+          "key": "area_max_m2",
+          "source_column": "Phạm vi sử dụng",
+          "type": "number"
+        },
+        {
+          "key": "cooling_capacity_btu",
+          "source_column": "Công suất đầu ra",
+          "type": "integer"
+        },
+        {
+          "key": "energy_stars",
+          "source_column": "Nhãn năng lượng",
+          "type": "integer"
+        },
+        {
+          "key": "cspf",
+          "source_column": "Nhãn năng lượng",
+          "type": "number"
+        },
+        {
+          "key": "indoor_noise_min_db",
+          "source_column": "Độ ồn",
+          "type": "number"
+        },
+        {
+          "key": "indoor_noise_max_db",
+          "source_column": "Độ ồn",
+          "type": "number"
+        },
+        {
+          "key": "outdoor_noise_db",
+          "source_column": "Độ ồn",
+          "type": "number"
+        },
+        {
+          "key": "inverter",
+          "source_column": "Loại Inverter",
+          "type": "boolean"
+        }
+      ],
+      "deep_parse": true,
+      "drop_columns": [
+        "Số lượng",
+        "Điện năng tiêu thụ"
+      ],
+      "list_columns": [
+        "Chế độ gió",
+        "Công nghệ làm lạnh",
+        "Công nghệ tiết kiệm điện",
+        "Tiện ích"
+      ],
+      "mappings": [
+        {
+          "key": "cooling_technology",
+          "source_column": "Công nghệ làm lạnh",
+          "type": "list"
+        },
+        {
+          "key": "san_xuat_tai",
+          "source_column": "Sản xuất tại",
+          "type": "string"
+        },
+        {
+          "key": "energy_saving_technology",
+          "source_column": "Công nghệ tiết kiệm điện",
+          "type": "list"
+        },
+        {
+          "key": "features",
+          "source_column": "Tiện ích",
+          "type": "list"
+        },
+        {
+          "key": "khoi_luong_may",
+          "source_column": "Khối lượng máy",
+          "type": "string"
+        },
+        {
+          "key": "warranty",
+          "source_column": "Bảo hành bộ phận",
+          "type": "string"
+        },
+        {
+          "key": "machine_type",
+          "source_column": "Loại máy",
+          "type": "string"
+        },
+        {
+          "key": "output_capacity",
+          "source_column": "Công suất đầu ra",
+          "type": "string"
+        },
+        {
+          "key": "energy_label",
+          "source_column": "Nhãn năng lượng",
+          "type": "string"
+        },
+        {
+          "key": "dai_ong_dong",
+          "source_column": "Dài ống đồng",
+          "type": "string"
+        },
+        {
+          "key": "cao_lap_dat",
+          "source_column": "Cao lắp đặt",
+          "type": "string"
+        },
+        {
+          "key": "chat_lieu_dan_tan_nhiet",
+          "source_column": "Chất liệu dàn tản nhiệt",
+          "type": "string"
+        },
+        {
+          "key": "noise",
+          "source_column": "Độ ồn",
+          "type": "string"
+        },
+        {
+          "key": "dong_dien_vao",
+          "source_column": "Dòng điện vào",
+          "type": "string"
+        },
+        {
+          "key": "kich_thuoc_ong_dong",
+          "source_column": "Kích thước ống đồng",
+          "type": "string"
+        },
+        {
+          "key": "dai_phu_kien_chinh",
+          "source_column": "Dài phụ kiện chính",
+          "type": "string"
+        },
+        {
+          "key": "do_day_phu_kien_chinh",
+          "source_column": "Độ dày phụ kiện chính",
+          "type": "string"
+        },
+        {
+          "key": "khoi_luong_phu_kien_chinh",
+          "source_column": "Khối lượng phụ kiện chính",
+          "type": "string"
+        },
+        {
+          "key": "cao_phu_kien_phu",
+          "source_column": "Cao phụ kiện phụ",
+          "type": "string"
+        },
+        {
+          "key": "dai_phu_kien_phu",
+          "source_column": "Dài phụ kiện phụ",
+          "type": "string"
+        },
+        {
+          "key": "do_day_phu_kien_phu",
+          "source_column": "Độ dày phụ kiện phụ",
+          "type": "string"
+        },
+        {
+          "key": "khoi_luong_phu_kien_phu",
+          "source_column": "Khối lượng phụ kiện phụ",
+          "type": "string"
+        },
+        {
+          "key": "dong_dien_hoat_dong",
+          "source_column": "Dòng điện hoạt động",
+          "type": "string"
+        },
+        {
+          "key": "air_filter_features",
+          "source_column": "Chuẩn chống nước, bụi",
+          "type": "string"
+        },
+        {
+          "key": "inverter_type",
+          "source_column": "Loại Inverter",
+          "type": "string"
+        },
+        {
+          "key": "wind_modes",
+          "source_column": "Chế độ gió",
+          "type": "list"
+        },
+        {
+          "key": "product_year",
+          "source_column": "Dòng sản phẩm",
+          "type": "string"
+        },
+        {
+          "key": "usage_area",
+          "source_column": "Phạm vi sử dụng",
+          "type": "string"
+        },
+        {
+          "key": "gas_type",
+          "source_column": "Loại Gas",
+          "type": "string"
+        },
+        {
+          "key": "compressor_warranty",
+          "source_column": "Bảo hành động cơ",
+          "type": "string"
+        },
+        {
+          "key": "cao_phu_kien_chinh",
+          "source_column": "Cao phụ kiện chính",
+          "type": "string"
+        },
+        {
+          "key": "cao_phu_kien_chinh_2",
+          "source_column": "Cao phụ kiện chính 2",
+          "type": "string"
+        },
+        {
+          "key": "dai_phu_kien_chinh_2",
+          "source_column": "Dài phụ kiện chính 2",
+          "type": "string"
+        },
+        {
+          "key": "do_day_phu_kien_chinh_2",
+          "source_column": "Độ dày phụ kiện chính 2",
+          "type": "string"
+        }
+      ],
+      "schema": "air_conditioner.schema.json"
+    },
+    "Máy nước nóng": {
+      "category": "water_heater",
+      "deep_fields": [],
+      "deep_parse": false,
+      "drop_columns": [],
+      "list_columns": [
+        "Chất liệu ruột",
+        "Tiện ích",
+        "Tính năng an toàn"
+      ],
+      "mappings": [
+        {
+          "key": "san_xuat_tai",
+          "source_column": "Sản xuất tại",
+          "type": "string"
+        },
+        {
+          "key": "chat_lieu_than_vo",
+          "source_column": "Chất liệu thân vỏ",
+          "type": "string"
+        },
+        {
+          "key": "features",
+          "source_column": "Tiện ích",
+          "type": "list"
+        },
+        {
+          "key": "cao",
+          "source_column": "Cao",
+          "type": "string"
+        },
+        {
+          "key": "khoi_luong_may",
+          "source_column": "Khối lượng máy",
+          "type": "string"
+        },
+        {
+          "key": "machine_type",
+          "source_column": "Loại máy",
+          "type": "string"
+        },
+        {
+          "key": "output_capacity",
+          "source_column": "Công suất đầu ra",
+          "type": "string"
+        },
+        {
+          "key": "so_luong",
+          "source_column": "Số lượng",
+          "type": "string"
+        },
+        {
+          "key": "product_year",
+          "source_column": "Dòng sản phẩm",
+          "type": "string"
+        },
+        {
+          "key": "chat_lieu_ruot",
+          "source_column": "Chất liệu ruột",
+          "type": "list"
+        },
+        {
+          "key": "thuong_hieu_cua",
+          "source_column": "Thương hiệu của",
+          "type": "string"
+        },
+        {
+          "key": "tinh_nang_an_toan",
+          "source_column": "Tính năng an toàn",
+          "type": "list"
+        },
+        {
+          "key": "tuy_chinh_nhiet_do",
+          "source_column": "Tùy chỉnh nhiệt độ",
+          "type": "string"
+        },
+        {
+          "key": "ap_luc_nuoc_hoat_dong",
+          "source_column": "Áp lực nước hoạt động",
+          "type": "string"
+        },
+        {
+          "key": "thoi_gian_su_dung",
+          "source_column": "Thời gian sử dụng",
+          "type": "string"
+        },
+        {
+          "key": "nhiet_do_lam_nong_toi_da",
+          "source_column": "Nhiệt độ làm nóng tối đa",
+          "type": "string"
+        },
+        {
+          "key": "loai_tam_thu_nhiet",
+          "source_column": "Loại tấm thu nhiệt",
+          "type": "string"
+        },
+        {
+          "key": "thoi_gian_giu_nhiet",
+          "source_column": "Thời gian giữ nhiệt",
+          "type": "string"
+        },
+        {
+          "key": "dai_ong",
+          "source_column": "Dài ống",
+          "type": "string"
+        },
+        {
+          "key": "chat_lieu_khung_vien",
+          "source_column": "Chất liệu khung viền",
+          "type": "string"
+        },
+        {
+          "key": "chat_lieu_voi_sen",
+          "source_column": "Chất liệu vòi sen",
+          "type": "string"
+        },
+        {
+          "key": "chat_lieu_gia_do_voi_sen",
+          "source_column": "Chất liệu giá đỡ vòi sen",
+          "type": "string"
+        },
+        {
+          "key": "voi_sen",
+          "source_column": "Vòi sen",
+          "type": "string"
+        },
+        {
+          "key": "rong",
+          "source_column": "Rộng",
+          "type": "string"
+        },
+        {
+          "key": "dai",
+          "source_column": "Dài",
+          "type": "string"
+        },
+        {
+          "key": "day",
+          "source_column": "Dày",
+          "type": "string"
+        },
+        {
+          "key": "lop_cach_nhiet",
+          "source_column": "Lớp cách nhiệt",
+          "type": "string"
+        },
+        {
+          "key": "bom_tro_luc",
+          "source_column": "Bơm trợ lực",
+          "type": "string"
+        },
+        {
+          "key": "dung_luong_dung_tich",
+          "source_column": "Dung lượng dung tích",
+          "type": "string"
+        }
+      ],
+      "schema": "water_heater.schema.json"
+    },
+    "Máy rửa chén": {
+      "category": "dishwasher",
+      "deep_fields": [],
+      "deep_parse": false,
+      "drop_columns": [],
+      "list_columns": [
+        "Chương trình",
+        "Công nghệ",
+        "Công nghệ sấy",
+        "Tiện ích"
+      ],
+      "mappings": [
+        {
+          "key": "san_xuat_tai",
+          "source_column": "Sản xuất tại",
+          "type": "string"
+        },
+        {
+          "key": "chat_lieu_than_vo",
+          "source_column": "Chất liệu thân vỏ",
+          "type": "string"
+        },
+        {
+          "key": "features",
+          "source_column": "Tiện ích",
+          "type": "list"
+        },
+        {
+          "key": "cao",
+          "source_column": "Cao",
+          "type": "string"
+        },
+        {
+          "key": "ngang",
+          "source_column": "Ngang",
+          "type": "string"
+        },
+        {
+          "key": "sau",
+          "source_column": "Sâu",
+          "type": "string"
+        },
+        {
+          "key": "khoi_luong_may",
+          "source_column": "Khối lượng máy",
+          "type": "string"
+        },
+        {
+          "key": "output_capacity",
+          "source_column": "Công suất đầu ra",
+          "type": "string"
+        },
+        {
+          "key": "noise",
+          "source_column": "Độ ồn",
+          "type": "string"
+        },
+        {
+          "key": "so_luong",
+          "source_column": "Số lượng",
+          "type": "string"
+        },
+        {
+          "key": "product_year",
+          "source_column": "Dòng sản phẩm",
+          "type": "string"
+        },
+        {
+          "key": "loai_san_pham",
+          "source_column": "Loại sản phẩm",
+          "type": "string"
+        },
+        {
+          "key": "bang_dieu_khien",
+          "source_column": "Bảng điều khiển",
+          "type": "string"
+        },
+        {
+          "key": "cong_nghe",
+          "source_column": "Công nghệ",
+          "type": "list"
+        },
+        {
+          "key": "cong_nghe_say",
+          "source_column": "Công nghệ sấy",
+          "type": "list"
+        },
+        {
+          "key": "chuong_trinh",
+          "source_column": "Chương trình",
+          "type": "list"
+        },
+        {
+          "key": "dai_ong_cap_nuoc",
+          "source_column": "Dài ống cấp nước",
+          "type": "string"
+        },
+        {
+          "key": "dai_ong_xa_nuoc",
+          "source_column": "Dài ống xả nước",
+          "type": "string"
+        },
+        {
+          "key": "tieu_thu_nuoc",
+          "source_column": "Tiêu thụ nước",
+          "type": "string"
+        },
+        {
+          "key": "chat_lieu_cua",
+          "source_column": "Chất liệu cửa",
+          "type": "string"
+        },
+        {
+          "key": "khay_chen",
+          "source_column": "Khay chén",
+          "type": "string"
+        }
+      ],
+      "schema": "dishwasher.schema.json"
+    },
+    "Máy sấy quần áo": {
+      "category": "dryer",
+      "deep_fields": [],
+      "deep_parse": false,
+      "drop_columns": [],
+      "list_columns": [
+        "Chất liệu ruột",
+        "Công nghệ",
+        "Công nghệ tiết kiệm điện",
+        "Cảm biến",
+        "Tiện ích"
+      ],
+      "mappings": [
+        {
+          "key": "san_xuat_tai",
+          "source_column": "Sản xuất tại",
+          "type": "string"
+        },
+        {
+          "key": "dien_nang_tieu_thu",
+          "source_column": "Điện năng tiêu thụ",
+          "type": "string"
+        },
+        {
+          "key": "chat_lieu_than_vo",
+          "source_column": "Chất liệu thân vỏ",
+          "type": "string"
+        },
+        {
+          "key": "so_nguoi_su_dung",
+          "source_column": "Số người sử dụng",
+          "type": "string"
+        },
+        {
+          "key": "energy_saving_technology",
+          "source_column": "Công nghệ tiết kiệm điện",
+          "type": "list"
+        },
+        {
+          "key": "features",
+          "source_column": "Tiện ích",
+          "type": "list"
+        },
+        {
+          "key": "cao",
+          "source_column": "Cao",
+          "type": "string"
+        },
+        {
+          "key": "ngang",
+          "source_column": "Ngang",
+          "type": "string"
+        },
+        {
+          "key": "sau",
+          "source_column": "Sâu",
+          "type": "string"
+        },
+        {
+          "key": "khoi_luong_may",
+          "source_column": "Khối lượng máy",
+          "type": "string"
+        },
+        {
+          "key": "product_year",
+          "source_column": "Dòng sản phẩm",
+          "type": "string"
+        },
+        {
+          "key": "loai_san_pham",
+          "source_column": "Loại sản phẩm",
+          "type": "string"
+        },
+        {
+          "key": "bang_dieu_khien",
+          "source_column": "Bảng điều khiển",
+          "type": "string"
+        },
+        {
+          "key": "khoi_luong_tai_chinh",
+          "source_column": "Khối lượng tải chính",
+          "type": "string"
+        },
+        {
+          "key": "cong_nghe",
+          "source_column": "Công nghệ",
+          "type": "list"
+        },
+        {
+          "key": "chat_lieu_ruot",
+          "source_column": "Chất liệu ruột",
+          "type": "list"
+        },
+        {
+          "key": "dong_co",
+          "source_column": "Động cơ",
+          "type": "string"
+        },
+        {
+          "key": "dai_ong_xa_nuoc",
+          "source_column": "Dài ống xả nước",
+          "type": "string"
+        },
+        {
+          "key": "nhiet_do_toi_da",
+          "source_column": "Nhiệt độ tối đa",
+          "type": "string"
+        },
+        {
+          "key": "dai_ong_thoat_khi",
+          "source_column": "Dài ống thoát khí",
+          "type": "string"
+        },
+        {
+          "key": "chat_lieu_cua",
+          "source_column": "Chất liệu cửa",
+          "type": "string"
+        },
+        {
+          "key": "cam_bien",
+          "source_column": "Cảm biến",
+          "type": "list"
+        }
+      ],
+      "schema": "dryer.schema.json"
+    },
+    "Máy tính bảng": {
+      "category": "tablet",
+      "deep_fields": [],
+      "deep_parse": false,
+      "drop_columns": [],
+      "list_columns": [
+        "Kết nối",
+        "Phụ kiện đi kèm",
+        "Quay phim",
+        "Tính năng camera sau",
+        "Tính năng camera trước",
+        "Tính năng đặc biệt"
+      ],
+      "mappings": [
+        {
+          "key": "sim",
+          "source_column": "SIM",
+          "type": "string"
+        },
+        {
+          "key": "thuc_hien_cuoc_goi",
+          "source_column": "Thực hiện cuộc gọi",
+          "type": "string"
+        },
+        {
+          "key": "air_filter_features",
+          "source_column": "Chuẩn chống nước, bụi",
+          "type": "string"
+        },
+        {
+          "key": "dung_luong_pin",
+          "source_column": "Dung lượng pin",
+          "type": "string"
+        },
+        {
+          "key": "cong_sac",
+          "source_column": "Cổng sạc",
+          "type": "string"
+        },
+        {
+          "key": "thoi_gian_ra_mat",
+          "source_column": "Thời gian ra mắt",
+          "type": "string"
+        },
+        {
+          "key": "man_hinh_hien_thi",
+          "source_column": "Màn hình hiển thị",
+          "type": "string"
+        },
+        {
+          "key": "kich_thuoc_man_hinh",
+          "source_column": "Kích thước màn hình",
+          "type": "string"
+        },
+        {
+          "key": "do_phan_giai",
+          "source_column": "Độ phân giải",
+          "type": "string"
+        },
+        {
+          "key": "dai",
+          "source_column": "Dài",
+          "type": "string"
+        },
+        {
+          "key": "ngang",
+          "source_column": "Ngang",
+          "type": "string"
+        },
+        {
+          "key": "day",
+          "source_column": "Dày",
+          "type": "string"
+        },
+        {
+          "key": "khoi_luong_may",
+          "source_column": "Khối lượng máy",
+          "type": "string"
+        },
+        {
+          "key": "chip_xu_ly_cpu",
+          "source_column": "Chip xử lý (CPU)",
+          "type": "string"
+        },
+        {
+          "key": "he_dieu_hanh",
+          "source_column": "Hệ điều hành",
+          "type": "string"
+        },
+        {
+          "key": "ket_noi",
+          "source_column": "Kết nối",
+          "type": "list"
+        },
+        {
+          "key": "chat_lieu_than_vo",
+          "source_column": "Chất liệu thân vỏ",
+          "type": "string"
+        },
+        {
+          "key": "phu_kien_di_kem",
+          "source_column": "Phụ kiện đi kèm",
+          "type": "list"
+        },
+        {
+          "key": "wifi",
+          "source_column": "Wifi",
+          "type": "string"
+        },
+        {
+          "key": "the_nho",
+          "source_column": "Thẻ nhớ",
+          "type": "string"
+        },
+        {
+          "key": "toc_do_cpu",
+          "source_column": "Tốc độ CPU",
+          "type": "string"
+        },
+        {
+          "key": "ram",
+          "source_column": "RAM",
+          "type": "string"
+        },
+        {
+          "key": "chip_do_hoa_gpu",
+          "source_column": "Chip đồ họa (GPU)",
+          "type": "string"
+        },
+        {
+          "key": "bluetooth",
+          "source_column": "Bluetooth",
+          "type": "string"
+        },
+        {
+          "key": "cong_tai_nghe_headphone",
+          "source_column": "Cổng tai nghe, headphone",
+          "type": "string"
+        },
+        {
+          "key": "tinh_nang_dac_biet",
+          "source_column": "Tính năng đặc biệt",
+          "type": "list"
+        },
+        {
+          "key": "ghi_am",
+          "source_column": "Ghi âm",
+          "type": "string"
+        },
+        {
+          "key": "radio",
+          "source_column": "Radio",
+          "type": "string"
+        },
+        {
+          "key": "loai_pin",
+          "source_column": "Loại pin",
+          "type": "string"
+        },
+        {
+          "key": "cong_nghe_pin",
+          "source_column": "Công nghệ pin",
+          "type": "string"
+        },
+        {
+          "key": "ho_tro_sac_toi_da",
+          "source_column": "Hỗ trợ sạc tối đa",
+          "type": "string"
+        },
+        {
+          "key": "dung_luong_luu_tru",
+          "source_column": "Dung lượng lưu trữ",
+          "type": "string"
+        },
+        {
+          "key": "dung_luong_kha_dung",
+          "source_column": "Dung lượng khả dụng",
+          "type": "string"
+        },
+        {
+          "key": "quay_phim",
+          "source_column": "Quay phim",
+          "type": "list"
+        },
+        {
+          "key": "tinh_nang_camera_sau",
+          "source_column": "Tính năng camera sau",
+          "type": "list"
+        },
+        {
+          "key": "tinh_nang_camera_truoc",
+          "source_column": "Tính năng camera trước",
+          "type": "list"
+        },
+        {
+          "key": "mang_di_dong",
+          "source_column": "Mạng di động",
+          "type": "string"
+        },
+        {
+          "key": "gps",
+          "source_column": "GPS",
+          "type": "string"
+        }
+      ],
+      "schema": "tablet.schema.json"
+    },
+    "Máy tính để bàn": {
+      "category": "desktop_pc",
+      "deep_fields": [],
+      "deep_parse": false,
+      "drop_columns": [],
+      "list_columns": [
+        "Công nghệ âm thanh",
+        "Cổng I/O mặt sau",
+        "Cổng giao tiếp",
+        "Cổng kết nối",
+        "Kết nối Internet",
+        "Phụ kiện đi kèm",
+        "Tính năng khác"
+      ],
+      "mappings": [
+        {
+          "key": "thoi_gian_ra_mat",
+          "source_column": "Thời gian ra mắt",
+          "type": "string"
+        },
+        {
+          "key": "man_hinh_hien_thi",
+          "source_column": "Màn hình hiển thị",
+          "type": "string"
+        },
+        {
+          "key": "kich_thuoc_man_hinh",
+          "source_column": "Kích thước màn hình",
+          "type": "string"
+        },
+        {
+          "key": "do_phan_giai",
+          "source_column": "Độ phân giải",
+          "type": "string"
+        },
+        {
+          "key": "dai",
+          "source_column": "Dài",
+          "type": "string"
+        },
+        {
+          "key": "day",
+          "source_column": "Dày",
+          "type": "string"
+        },
+        {
+          "key": "khoi_luong_may",
+          "source_column": "Khối lượng máy",
+          "type": "string"
+        },
+        {
+          "key": "bo_nho",
+          "source_column": "Bộ nhớ",
+          "type": "string"
+        },
+        {
+          "key": "he_dieu_hanh",
+          "source_column": "Hệ điều hành",
+          "type": "string"
+        },
+        {
+          "key": "ho_tro_mainboard",
+          "source_column": "Hỗ trợ mainboard",
+          "type": "string"
+        },
+        {
+          "key": "chat_lieu_than_vo",
+          "source_column": "Chất liệu thân vỏ",
+          "type": "string"
+        },
+        {
+          "key": "ho_tro_o_cung_toi_da",
+          "source_column": "Hỗ trợ ổ cứng tối đa",
+          "type": "string"
+        },
+        {
+          "key": "phu_kien_di_kem",
+          "source_column": "Phụ kiện đi kèm",
+          "type": "list"
+        },
+        {
+          "key": "den_led",
+          "source_column": "Đèn LED",
+          "type": "string"
+        },
+        {
+          "key": "tan_nhiet_nuoc",
+          "source_column": "Tản nhiệt nước",
+          "type": "string"
+        },
+        {
+          "key": "tan_nhiet_cpu",
+          "source_column": "Tản nhiệt CPU",
+          "type": "string"
+        },
+        {
+          "key": "toc_do_rpm",
+          "source_column": "Tốc độ (RPM)",
+          "type": "string"
+        },
+        {
+          "key": "cong_ket_noi",
+          "source_column": "Cổng kết nối",
+          "type": "list"
+        },
+        {
+          "key": "cong_giao_tiep",
+          "source_column": "Cổng giao tiếp",
+          "type": "list"
+        },
+        {
+          "key": "wifi",
+          "source_column": "Wifi",
+          "type": "string"
+        },
+        {
+          "key": "the_nho",
+          "source_column": "Thẻ nhớ",
+          "type": "string"
+        },
+        {
+          "key": "webcam",
+          "source_column": "Webcam",
+          "type": "string"
+        },
+        {
+          "key": "tinh_nang_khac",
+          "source_column": "Tính năng khác",
+          "type": "list"
+        },
+        {
+          "key": "o_dia_quang",
+          "source_column": "Ổ đĩa quang",
+          "type": "string"
+        },
+        {
+          "key": "rong",
+          "source_column": "Rộng",
+          "type": "string"
+        },
+        {
+          "key": "nguon_dien",
+          "source_column": "Nguồn điện",
+          "type": "string"
+        },
+        {
+          "key": "cong_nghe_cpu",
+          "source_column": "Công nghệ CPU",
+          "type": "string"
+        },
+        {
+          "key": "loai_cpu",
+          "source_column": "Loại CPU",
+          "type": "string"
+        },
+        {
+          "key": "toc_do_cpu",
+          "source_column": "Tốc độ CPU",
+          "type": "string"
+        },
+        {
+          "key": "toc_do_toi_da",
+          "source_column": "Tốc độ tối đa",
+          "type": "string"
+        },
+        {
+          "key": "so_nhan",
+          "source_column": "Số nhân",
+          "type": "string"
+        },
+        {
+          "key": "bo_nho_dem",
+          "source_column": "Bộ nhớ đệm",
+          "type": "string"
+        },
+        {
+          "key": "socket",
+          "source_column": "Socket",
+          "type": "string"
+        },
+        {
+          "key": "chipset",
+          "source_column": "Chipset",
+          "type": "string"
+        },
+        {
+          "key": "ram",
+          "source_column": "RAM",
+          "type": "string"
+        },
+        {
+          "key": "loai_ram",
+          "source_column": "Loại RAM",
+          "type": "string"
+        },
+        {
+          "key": "so_khe_ram",
+          "source_column": "Số khe RAM",
+          "type": "string"
+        },
+        {
+          "key": "ho_tro_ram_toi_da",
+          "source_column": "Hỗ trợ RAM tối đa",
+          "type": "string"
+        },
+        {
+          "key": "tan_nhiet_ram",
+          "source_column": "Tản nhiệt RAM",
+          "type": "string"
+        },
+        {
+          "key": "o_cung",
+          "source_column": "Ổ cứng",
+          "type": "string"
+        },
+        {
+          "key": "chuan_ket_noi_o_cung",
+          "source_column": "Chuẩn kết nối ổ cứng",
+          "type": "string"
+        },
+        {
+          "key": "khe_cam_mo_rong",
+          "source_column": "Khe cắm mở rộng",
+          "type": "string"
+        },
+        {
+          "key": "man_hinh_cam_ung",
+          "source_column": "Màn hình cảm ứng",
+          "type": "string"
+        },
+        {
+          "key": "thiet_ke_card",
+          "source_column": "Thiết kế card",
+          "type": "string"
+        },
+        {
+          "key": "cong_nghe_am_thanh",
+          "source_column": "Công nghệ âm thanh",
+          "type": "list"
+        },
+        {
+          "key": "model_mainboard",
+          "source_column": "Model Mainboard",
+          "type": "string"
+        },
+        {
+          "key": "form_factor",
+          "source_column": "Form Factor",
+          "type": "string"
+        },
+        {
+          "key": "socket_mainboard",
+          "source_column": "Socket (mainboard)",
+          "type": "string"
+        },
+        {
+          "key": "loai_ram_mainboard",
+          "source_column": "Loại RAM mainboard",
+          "type": "string"
+        },
+        {
+          "key": "so_khe_ram_mainboard",
+          "source_column": "Số khe RAM mainboard",
+          "type": "string"
+        },
+        {
+          "key": "toc_do_bus_ram_mainboard",
+          "source_column": "Tốc độ Bus RAM mainboard",
+          "type": "string"
+        },
+        {
+          "key": "ho_tro_ram_toi_da_mainboard",
+          "source_column": "Hỗ trợ RAM tối đa/mainboard",
+          "type": "string"
+        },
+        {
+          "key": "ho_tro_khe_cam_ssd_m_2_hdd",
+          "source_column": "Hỗ trợ khe cắm SSD M.2/HDD",
+          "type": "string"
+        },
+        {
+          "key": "so_khe_cam_mo_rong",
+          "source_column": "Số khe cắm mở rộng",
+          "type": "string"
+        },
+        {
+          "key": "cong_i_o_mat_sau",
+          "source_column": "Cổng I/O mặt sau",
+          "type": "list"
+        },
+        {
+          "key": "ket_noi_internet",
+          "source_column": "Kết nối Internet",
+          "type": "list"
+        },
+        {
+          "key": "card_do_hoa_onboard",
+          "source_column": "Card đồ hoạ onboard",
+          "type": "string"
+        },
+        {
+          "key": "model_gpu",
+          "source_column": "Model GPU",
+          "type": "string"
+        },
+        {
+          "key": "chip_do_hoa_gpu",
+          "source_column": "Chip đồ họa (GPU)",
+          "type": "string"
+        },
+        {
+          "key": "bus_bo_nho",
+          "source_column": "Bus bộ nhớ",
+          "type": "string"
+        },
+        {
+          "key": "chuan_giao_tiep",
+          "source_column": "Chuẩn giao tiếp",
+          "type": "string"
+        },
+        {
+          "key": "bo_nguon_de_xuat",
+          "source_column": "Bộ nguồn đề xuất",
+          "type": "string"
+        },
+        {
+          "key": "ho_tro_oc",
+          "source_column": "Hỗ trợ OC",
+          "type": "string"
+        },
+        {
+          "key": "yeu_cau_cap_nguon_truc_tiep",
+          "source_column": "Yêu cầu cấp nguồn trực tiếp",
+          "type": "string"
+        },
+        {
+          "key": "cong_xuat_hinh_anh",
+          "source_column": "Cổng xuất hình ảnh",
+          "type": "string"
+        },
+        {
+          "key": "so_luong_quat",
+          "source_column": "Số lượng quạt",
+          "type": "string"
+        },
+        {
+          "key": "loai_case",
+          "source_column": "Loại Case",
+          "type": "string"
+        }
+      ],
+      "schema": "desktop_pc.schema.json"
+    },
+    "Tủ Lạnh": {
+      "category": "refrigerator",
+      "deep_fields": [],
+      "deep_parse": false,
+      "drop_columns": [],
+      "list_columns": [
+        "Chế độ tự động",
+        "Công nghệ bảo quản thực phẩm",
+        "Công nghệ làm lạnh",
+        "Công nghệ tiết kiệm điện",
+        "Tiện ích"
+      ],
+      "mappings": [
+        {
+          "key": "kieu_dang",
+          "source_column": "Kiểu dáng",
+          "type": "string"
+        },
+        {
+          "key": "cooling_technology",
+          "source_column": "Công nghệ làm lạnh",
+          "type": "list"
+        },
+        {
+          "key": "san_xuat_tai",
+          "source_column": "Sản xuất tại",
+          "type": "string"
+        },
+        {
+          "key": "thoi_gian_ra_mat",
+          "source_column": "Thời gian ra mắt",
+          "type": "string"
+        },
+        {
+          "key": "chat_lieu_khay_ngan_lanh",
+          "source_column": "Chất liệu khay ngăn lạnh",
+          "type": "string"
+        },
+        {
+          "key": "dung_tich_tong",
+          "source_column": "Dung tích tổng",
+          "type": "string"
+        },
+        {
+          "key": "dung_tich_ngan_da",
+          "source_column": "Dung tích ngăn đá",
+          "type": "string"
+        },
+        {
+          "key": "dung_tich_ngan_lanh",
+          "source_column": "Dung tích ngăn lạnh",
+          "type": "string"
+        },
+        {
+          "key": "dien_nang_tieu_thu",
+          "source_column": "Điện năng tiêu thụ",
+          "type": "string"
+        },
+        {
+          "key": "chat_lieu_than_vo",
+          "source_column": "Chất liệu thân vỏ",
+          "type": "string"
+        },
+        {
+          "key": "so_nguoi_su_dung",
+          "source_column": "Số người sử dụng",
+          "type": "string"
+        },
+        {
+          "key": "dung_tich_su_dung",
+          "source_column": "Dung tích sử dụng",
+          "type": "string"
+        },
+        {
+          "key": "energy_saving_technology",
+          "source_column": "Công nghệ tiết kiệm điện",
+          "type": "list"
+        },
+        {
+          "key": "cong_nghe_bao_quan_thuc_pham",
+          "source_column": "Công nghệ bảo quản thực phẩm",
+          "type": "list"
+        },
+        {
+          "key": "features",
+          "source_column": "Tiện ích",
+          "type": "list"
+        },
+        {
+          "key": "chat_lieu_dong_co",
+          "source_column": "Chất liệu động cơ",
+          "type": "string"
+        },
+        {
+          "key": "dung_tich_ngan_chuyen_doi",
+          "source_column": "Dung tích ngăn chuyển đổi",
+          "type": "string"
+        },
+        {
+          "key": "so_cua",
+          "source_column": "Số cửa",
+          "type": "string"
+        },
+        {
+          "key": "cao",
+          "source_column": "Cao",
+          "type": "string"
+        },
+        {
+          "key": "ngang",
+          "source_column": "Ngang",
+          "type": "string"
+        },
+        {
+          "key": "sau",
+          "source_column": "Sâu",
+          "type": "string"
+        },
+        {
+          "key": "khoi_luong_may",
+          "source_column": "Khối lượng máy",
+          "type": "string"
+        },
+        {
+          "key": "lay_nuoc_ngoai",
+          "source_column": "Lấy nước ngoài",
+          "type": "string"
+        },
+        {
+          "key": "che_do_tu_dong",
+          "source_column": "Chế độ tự động",
+          "type": "list"
+        }
+      ],
+      "schema": "refrigerator.schema.json"
+    },
+    "Tủ mát, tủ đông": {
+      "category": "freezer",
+      "deep_fields": [],
+      "deep_parse": false,
+      "drop_columns": [],
+      "list_columns": [
+        "Chất liệu ruột",
+        "Công nghệ",
+        "Công nghệ tiết kiệm điện",
+        "Tiện ích"
+      ],
+      "mappings": [
+        {
+          "key": "san_xuat_tai",
+          "source_column": "Sản xuất tại",
+          "type": "string"
+        },
+        {
+          "key": "thoi_gian_ra_mat",
+          "source_column": "Thời gian ra mắt",
+          "type": "string"
+        },
+        {
+          "key": "dung_tich_tong",
+          "source_column": "Dung tích tổng",
+          "type": "string"
+        },
+        {
+          "key": "dien_nang_tieu_thu",
+          "source_column": "Điện năng tiêu thụ",
+          "type": "string"
+        },
+        {
+          "key": "energy_saving_technology",
+          "source_column": "Công nghệ tiết kiệm điện",
+          "type": "list"
+        },
+        {
+          "key": "features",
+          "source_column": "Tiện ích",
+          "type": "list"
+        },
+        {
+          "key": "chat_lieu_dong_co",
+          "source_column": "Chất liệu động cơ",
+          "type": "string"
+        },
+        {
+          "key": "so_cua",
+          "source_column": "Số cửa",
+          "type": "string"
+        },
+        {
+          "key": "cao",
+          "source_column": "Cao",
+          "type": "string"
+        },
+        {
+          "key": "ngang",
+          "source_column": "Ngang",
+          "type": "string"
+        },
+        {
+          "key": "sau",
+          "source_column": "Sâu",
+          "type": "string"
+        },
+        {
+          "key": "khoi_luong_may",
+          "source_column": "Khối lượng máy",
+          "type": "string"
+        },
+        {
+          "key": "noise",
+          "source_column": "Độ ồn",
+          "type": "string"
+        },
+        {
+          "key": "gas_type",
+          "source_column": "Loại Gas",
+          "type": "string"
+        },
+        {
+          "key": "loai_san_pham",
+          "source_column": "Loại sản phẩm",
+          "type": "string"
+        },
+        {
+          "key": "chat_lieu_mat",
+          "source_column": "Chất liệu mặt",
+          "type": "string"
+        },
+        {
+          "key": "cong_nghe",
+          "source_column": "Công nghệ",
+          "type": "list"
+        },
+        {
+          "key": "chat_lieu_ruot",
+          "source_column": "Chất liệu ruột",
+          "type": "list"
+        },
+        {
+          "key": "dung_tich_ngan_dong_mem",
+          "source_column": "Dung tích ngăn đông mềm",
+          "type": "string"
+        },
+        {
+          "key": "thuong_hieu_cua",
+          "source_column": "Thương hiệu của",
+          "type": "string"
+        },
+        {
+          "key": "so_ngan",
+          "source_column": "Số ngăn",
+          "type": "string"
+        },
+        {
+          "key": "nhiet_do_ngan_dong_do_c",
+          "source_column": "Nhiệt độ ngăn đông (độ C)",
+          "type": "string"
+        }
+      ],
+      "schema": "freezer.schema.json"
+    },
+    "Đồng hồ thông minh": {
+      "category": "smartwatch",
+      "deep_fields": [],
+      "deep_parse": false,
+      "drop_columns": [],
+      "list_columns": [
+        "Cảm biến",
+        "Hiển thị thông báo",
+        "Kết nối",
+        "Môn thể thao",
+        "Ngôn ngữ",
+        "Theo dõi sức khoẻ",
+        "Tiện ích",
+        "Tiện ích khác",
+        "Tương thích",
+        "Định vị",
+        "Ứng dụng"
+      ],
+      "mappings": [
+        {
+          "key": "cam_bien",
+          "source_column": "Cảm biến",
+          "type": "list"
+        },
+        {
+          "key": "dinh_vi",
+          "source_column": "Định vị",
+          "type": "list"
+        },
+        {
+          "key": "mon_the_thao",
+          "source_column": "Môn thể thao",
+          "type": "list"
+        },
+        {
+          "key": "sim",
+          "source_column": "SIM",
+          "type": "string"
+        },
+        {
+          "key": "thuc_hien_cuoc_goi",
+          "source_column": "Thực hiện cuộc gọi",
+          "type": "string"
+        },
+        {
+          "key": "features",
+          "source_column": "Tiện ích",
+          "type": "list"
+        },
+        {
+          "key": "air_filter_features",
+          "source_column": "Chuẩn chống nước, bụi",
+          "type": "string"
+        },
+        {
+          "key": "theo_doi_suc_khoe",
+          "source_column": "Theo dõi sức khoẻ",
+          "type": "list"
+        },
+        {
+          "key": "tien_ich_khac",
+          "source_column": "Tiện ích khác",
+          "type": "list"
+        },
+        {
+          "key": "hien_thi_thong_bao",
+          "source_column": "Hiển thị thông báo",
+          "type": "list"
+        },
+        {
+          "key": "thoi_gian_su_dung",
+          "source_column": "Thời gian sử dụng",
+          "type": "string"
+        },
+        {
+          "key": "thoi_gian_sac",
+          "source_column": "Thời gian sạc",
+          "type": "string"
+        },
+        {
+          "key": "dung_luong_pin",
+          "source_column": "Dung lượng pin",
+          "type": "string"
+        },
+        {
+          "key": "cong_sac",
+          "source_column": "Cổng sạc",
+          "type": "string"
+        },
+        {
+          "key": "san_xuat_tai",
+          "source_column": "Sản xuất tại",
+          "type": "string"
+        },
+        {
+          "key": "thoi_gian_ra_mat",
+          "source_column": "Thời gian ra mắt",
+          "type": "string"
+        },
+        {
+          "key": "ngon_ngu",
+          "source_column": "Ngôn ngữ",
+          "type": "list"
+        },
+        {
+          "key": "man_hinh_hien_thi",
+          "source_column": "Màn hình hiển thị",
+          "type": "string"
+        },
+        {
+          "key": "kich_thuoc_man_hinh",
+          "source_column": "Kích thước màn hình",
+          "type": "string"
+        },
+        {
+          "key": "do_phan_giai",
+          "source_column": "Độ phân giải",
+          "type": "string"
+        },
+        {
+          "key": "kich_thuoc_mat",
+          "source_column": "Kích thước mặt",
+          "type": "string"
+        },
+        {
+          "key": "chat_lieu_mat",
+          "source_column": "Chất liệu mặt",
+          "type": "string"
+        },
+        {
+          "key": "chat_lieu_khung_vien",
+          "source_column": "Chất liệu khung viền",
+          "type": "string"
+        },
+        {
+          "key": "chat_lieu_day",
+          "source_column": "Chất liệu dây",
+          "type": "string"
+        },
+        {
+          "key": "do_rong_day",
+          "source_column": "Độ rộng dây",
+          "type": "string"
+        },
+        {
+          "key": "chu_vi_co_tay",
+          "source_column": "Chu vi cổ tay",
+          "type": "string"
+        },
+        {
+          "key": "thay_the",
+          "source_column": "Thay thế",
+          "type": "string"
+        },
+        {
+          "key": "dai",
+          "source_column": "Dài",
+          "type": "string"
+        },
+        {
+          "key": "ngang",
+          "source_column": "Ngang",
+          "type": "string"
+        },
+        {
+          "key": "day",
+          "source_column": "Dày",
+          "type": "string"
+        },
+        {
+          "key": "khoi_luong_may",
+          "source_column": "Khối lượng máy",
+          "type": "string"
+        },
+        {
+          "key": "thiet_ke",
+          "source_column": "Thiết kế",
+          "type": "string"
+        },
+        {
+          "key": "do_phan_giai_camera_truoc",
+          "source_column": "Độ phân giải camera trước",
+          "type": "string"
+        },
+        {
+          "key": "chip_xu_ly_cpu",
+          "source_column": "Chip xử lý (CPU)",
+          "type": "string"
+        },
+        {
+          "key": "bo_nho",
+          "source_column": "Bộ nhớ",
+          "type": "string"
+        },
+        {
+          "key": "he_dieu_hanh",
+          "source_column": "Hệ điều hành",
+          "type": "string"
+        },
+        {
+          "key": "tuong_thich",
+          "source_column": "Tương thích",
+          "type": "list"
+        },
+        {
+          "key": "ung_dung",
+          "source_column": "Ứng dụng",
+          "type": "list"
+        },
+        {
+          "key": "ket_noi",
+          "source_column": "Kết nối",
+          "type": "list"
+        },
+        {
+          "key": "duong_kinh",
+          "source_column": "Đường kính",
+          "type": "string"
+        }
+      ],
+      "schema": "smartwatch.schema.json"
+    }
+  },
+  "version": 1
+}

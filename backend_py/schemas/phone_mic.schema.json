@@ -1,0 +1,230 @@
+{
+  "$id": "btc:phone_mic",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "allOf": [
+    {
+      "$ref": "_base.schema.json"
+    }
+  ],
+  "properties": {
+    "category": {
+      "const": "phone_mic"
+    },
+    "spec": {
+      "properties": {
+        "ap_suat_am_thanh_spl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "bang_tan": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "chu_ky_sac": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cong_sac": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cong_suat_truyen_phat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cong_tai_nghe_headphone": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dung_luong_pin_bo_phat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dung_luong_pin_bo_thu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dung_luong_pin_hop_sac": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "huong_thu_am": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ket_noi": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "khoang_cach_truyen": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "khoi_luong_may": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "kich_thuoc": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "loai_pin_bo_phat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "loai_pin_bo_thu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "loai_pin_hop_sac": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "loai_san_pham": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "nam_san_xuat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "nhiet_do_hoat_dong_bo_phat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "nhiet_do_hoat_dong_bo_thu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "phien_ban": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "phu_kien_di_kem": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "sac_day_bo_phat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sac_day_bo_thu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "san_xuat_tai": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tan_so_hoat_dong": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thoi_gian_hoat_dong_bo_phat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thoi_gian_hoat_dong_bo_thu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thoi_gian_sac_bo_phat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thoi_gian_sac_bo_thu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thoi_gian_su_dung": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thuong_hieu_cua": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tinh_nang_co_ban": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "tuong_thich": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "type": "object"
+    }
+  },
+  "title": "BTC canonical product - phone_mic"
+}

@@ -1,0 +1,6 @@
+fastapi>=0.139
+pydantic>=2.10
+python-dotenv>=1.0
+llama-index-core>=0.14,<0.15
+llama-index-llms-openai-like>=0.5
+guardrails-ai>=0.10,<0.11

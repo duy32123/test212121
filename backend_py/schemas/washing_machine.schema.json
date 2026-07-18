@@ -1,0 +1,176 @@
+{
+  "$id": "btc:washing_machine",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "allOf": [
+    {
+      "$ref": "_base.schema.json"
+    }
+  ],
+  "properties": {
+    "category": {
+      "const": "washing_machine"
+    },
+    "spec": {
+      "properties": {
+        "bang_dieu_khien": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cao": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chat_lieu_mat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chat_lieu_ruot": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "chat_lieu_than_vo": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "chuong_trinh": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "compressor_warranty": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cong_nghe": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "cong_nghe_say": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "dai_ong_cap_nuoc": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dai_ong_xa_nuoc": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dien_nang_tieu_thu": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "dong_co": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "features": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "inverter_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "khoi_luong_may": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "khoi_luong_tai_chinh": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "loai_san_pham": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "long_giat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ngang": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "san_xuat_tai": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sau": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "so_luong": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "so_nguoi_su_dung": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "thoi_gian_ra_mat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "toc_do_quay_vat_toi_da": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "type": "object"
+    }
+  },
+  "title": "BTC canonical product - washing_machine"
+}
